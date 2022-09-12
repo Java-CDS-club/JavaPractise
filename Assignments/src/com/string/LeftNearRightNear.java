@@ -3,7 +3,7 @@
  * 
  * */
 
-package com.collection.arraylist;
+package com.string;
 
 import java.util.Arrays;
 
@@ -28,8 +28,8 @@ public class LeftNearRightNear {
 				{
 					rNear[k] = no+a[i+k+1];
 				}
-				System.out.println(Arrays.toString(lNear));
-				System.out.println(Arrays.toString(rNear));
+//				System.out.println(Arrays.toString(lNear));
+//				System.out.println(Arrays.toString(rNear));
 				for(int j=0;j<lNear.length;j++)
 				{
 					if((min>lNear[j])&&(lNear[j]>=0))

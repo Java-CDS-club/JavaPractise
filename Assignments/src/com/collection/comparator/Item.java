@@ -3,7 +3,7 @@ package com.collection.comparator;
 public class Item implements Comparable<Item>{
 	int id;String iName;float iCost;
 	Item(){}
-	Item(int id,String iName,float iCost)
+	public Item(int id,String iName,float iCost)
 	{
 		this.id = id;
 		this.iName = iName;
@@ -18,9 +18,9 @@ public class Item implements Comparable<Item>{
 	public int compareTo(Item i)
 	{
 		if(this.iCost<i.iCost)
-			return +1;
-		else if(this.iCost>i.iCost)
 			return -1;
+		else if(this.iCost>i.iCost)
+			return +1;
 		else
 			return 0;
 	}
